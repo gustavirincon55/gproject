@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>G PROJECT</title>
+
+<link rel= "stylesheet" type="text/css" href="index-style-main.css">
+
+</head>
+
+
+<body>
+
+
+
+
+<nav>
+    <div class="">
+    <ul class="nav-item">
+        <div class="nav-item">
+        <li class="nav-item"><a href="index.html" class="nav-item">Home </a></li>
+        <li class="nav-item" ><a href="main.html" class="nav-item">Content</a></li>
+        <li class="nav-item" ><a href="" class="nav-item"> Data</a></li>
+        <li class="nav-item" ><a href="" class="nav-item">Map</a></li>
+        
+    </div> 
+    </ul>
+    </div>
+</nav>
+
+<div id="main-header">
+
+        <p>G PROJECT <br><br> Main Content</p>
+    
+    </div>
+
+
+<!--The top ends here-->
+
+<br><br><br>
+
+<div class="container">   
+
+    <div class="main-content">
+        <h1 class="first-h1">Main</h1>
+        <p>Lorem ipsum sit amet consectetur adipisicing elit. Qui, odio vero eveniet fuga esse facilis quis doloribus veniam ullam culpa, rerum voluptatum sed autem, eos saepe ipsam. Alias, amet officia! Lorem
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat unde aliquam officia ex dolor adipisci doloremque voluptas quos porro doloribus ipsum ad corrupti non at ut, quam magni eaque dicta.
+        </p>
+
+        <h1>Bonjour</h1>
+        <p>Lorem ipsum sit amet consectetur adipisicing elit. Qui, odio vero eveniet fuga esse facilis quis doloribus veniam ullam culpa, rerum voluptatum sed autem, eos saepe ipsam. Alias, amet officia! Lorem
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat unde aliquam officia ex dolor adipisci doloremque voluptas quos porro doloribus ipsum ad corrupti non at ut, quam magni eaque dicta.
+        </p>
+
+        <h1>Alloha</h1>
+        <p>Lorem ipsum sit amet consectetur adipisicing elit. Qui, odio vero eveniet fuga esse facilis quis doloribus veniam ullam culpa, rerum voluptatum sed autem, eos saepe ipsam. Alias, amet officia! Lorem
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat unde aliquam officia ex dolor adipisci doloremque voluptas quos porro doloribus ipsum ad corrupti non at ut, quam magni eaque dicta.
+        </p>
+
+        
+        <img src="PICS/music1.jpg" alt="music1" class="stock-img">    
+        <img src="PICS/music2.jpg" alt="music2" class="stock-img">    
+
+
+    </div>
+
+    <div class="side-content">
+
+        <p> Lorem ipsum, sit amet consectetur adipisicing elit. Quod quos impedit 
+            quia eos, deserunt ex eaque explicabo et.</p>
+
+    </div>
+
+            <img src="PICS/nature1.jpg" alt="Wood" class="side-img">    
+
+    <div class="side-content">
+
+            <p>Sit amet consectetur, adipisicing elit. Praesentium adipisci vero nihil aliquid quia accusantium, dolorem laborum deleniti assumenda eos, nemo tempore laboriosam consequatur ipsum tenetur. Ea, numquam corporis! Veritatis.</p>
+    
+    </div>
+    <audio controls>
+
+        <source src="https://s3.amazonaws.com/freecodecamp/screen-reader.mp3" type="audio/mpeg"> 
+  
+      </audio>
+
+<hr>
+<br>
+<!-- Javascript starts here-->
+<div class="form"> <form >
+First Name: <input type="text" title="firstName" value="">
+Last Name: <input type="text" title="lastName" value="">
+Middle Name: <input type="text" title="middleName" value="">
+
+<br><br>
+
+<fieldset>
+    <legend>What level ninja are you?</legend>
+    <input id="newbie" type="radio" name="levels" value="newbie" >
+            <label for="newbie">Newbie Kitten</label><br>
+
+    <input id="intermediate" type="radio" name="levels" value="intermediate">
+    <label for="intermediate">Developing Student</label><br>
+    <input id="master" type="radio" name="levels" value="master">
+    <label for="master">Master</label>
+  </fieldset>
+
+  <br>
+
+  <label for="input1">Enter a date:</label>
+  <input type="date" id="input1" name="input1">
+
+  <br>
+</form></div>
+
+
+<br><br>
+
+<button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
+<p id="demo"></p>
+
+<br>
+
+<button onclick="this.innerHTML=Date()">The time is?</button>
+<br>
+
+<br>
+
+<button onclick="myFunction()">Try it</button>
+
+<br>
+
+<p id="demo81">Please visit Microsoft!</p>
+
+<script>
+function myFunction() {
+   // var str = document.getElementById("demo81").innerHTML; //
+    var txt = str.replace(/MICROSOFT/i,"W3Schools");
+    document.getElementById("demo81").innerHTML = txt;
+};
+
+
+<br>
+</script>
+<script>
+
+var fruits, text, fLen, i;
+
+fruits = ["Banana", "Orange", "Apple", "Mango"];
+fLen = fruits.length;
+text = "<ul>";
+for (i = 0; i < fLen; i++) {
+    text += "<li>" + fruits[i] + "</li>";
+};
+
+
+</script>
+
+
+
+<br><br>
+<h2>JavaScript Array Sort</h2>
+
+<p>Click the buttons to sort the array alphabetically or numerically.</p>
+
+<button onclick="myFunction10()">Sort Alphabetically</button>
+<button onclick="myFunction20()">Sort Numerically</button>
+
+<p id="pointsDemo"></p>
+
+<script>
+
+var points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo").innerHTML = points;    
+
+function myFunction1() {
+    points.sort();
+    document.getElementById("demo").innerHTML = points;
+}
+function myFunction20() {
+    points.sort(function(a, b){return a - b});
+    points.reverse()
+    document.getElementById("pointsDemo").innerHTML = points;
+}
+</script>
+
+<script>
+var points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo").innerHTML = myArrayMax(points);
+
+function myArrayMax(arr) {
+    var len = arr.length;
+    var max = 0;
+    while (len--) {
+      if (arr[len] > max) {
+        max = arr[len];
+      }
+    }
+    return max;
+}
+</script>
+
+
+<!-- Javascript starts here-->
+
+<form action="/submit-cat-photo">
+    <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+    <label><input type="radio" name="indoor-outdoor"> Outdoor</label><br>
+    <label><input type="checkbox" name="personality"> Loving</label>
+    <label><input type="checkbox" name="personality"> Lazy</label>
+    <label><input type="checkbox" name="personality"> Energetic</label><br>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+  </form>
+
+  </div>
+
+
+<!--foother-->
+<footer>
+
+<p id="footer">Copyright &copy 2018</p>
+</footer>
+
+</body>
+
+</html>
